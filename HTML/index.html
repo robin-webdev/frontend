@@ -1,11 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Revision</title>
+  </head>
+  <body>
+    <!-- Heading Tags for SEO not for Styling -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Line Break Tag -->
+    <br />
+
+    <!-- Anchor Tag - for adding links to certain elements, images etc. -->
+
+    <a href="https://www.google.com">Open Google</a>
+
+    <!-- Image Tag - to add images to the webpage -->
+    <img
+      src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/Civic/7740/1585801296746/front-left-side-47.jpg"
+      alt="A car Image"
+      width="300px"
+      height="100px"
+    />
+
+    <!-- Bold Itallic and Underline Tag -->
+    <b>Bold Text</b>
+    <i>Itallic Text</i>
+    <u>Underlined Text</u>
+
+    <!-- Big and Small Tags -->
+    <big>This is a very Big text</big>
+    <small>This one is very small text</small>
+
+    <!-- Horizontal Ruler Tag -->
+    <hr />
+
+    <!-- Sub and Super Script Tags -->
+    H<sub>2</sub>O
+    <br />
+    2<sup>3</sup> = 8
+
+    <!-- Pre Tag -->
+    <pre>
+This     is a 
+            paragraph
+         </pre
+    >
+
+    <!-- Page Layout Technique -->
+    <header>The Page Header</header>
+
+    <main>
+      <article>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        quibusdam voluptates illo sunt voluptatibus accusantium nulla ad eaque
+        dicta, deleniti nihil eos autem suscipit sint, similique dolorum velit
+        tenetur consequuntur ullam, ea totam eveniet tempora? Natus officia aut
+        sapiente fugiat id ipsam doloribus at atque earum cupiditate. Nulla,
+        laboriosam obcaecati?
+      </article>
+
+      <section>This is a different Section</section>
+
+      <aside>Any Brand Paid Advertisement</aside>
+    </main>
+
+    <footer>The Page Footer</footer>
+
+    <!-- DIV - A Container for other elements -->
+    <div><b>This is a div</b></div>
+    <div><h1>Nothing Else</h1></div>
+    <div><br /></div>
+
+    <!-- Span Tag - same as DIV -->
+    <span>Number 1 Thing</span>
+    <span> <b>Some Space</b> </span>
+    <span>Number 2 Thing</span>
+
+    <!-- Lists in HTML -->
+
+    <!-- Ordered List -->
+
+    <ol type="A">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Avacado</li>
+      <li>Watermelon</li>
+    </ol>
+
+    <ul type="disc">
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>Goo</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <!-- Tables in HTML -->
+
+    <table>
+      <caption>
+        Game Stats
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Playtime</th>
+          <th colspan="2">Revenue & Profit</th>
+          <th>Active User</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>2 Hour</td>
+          <td>$25k</td>
+          <td>$5k</td>
+          <td>2.3K Users</td>
+        </tr>
+        <tr>
+          <td>6 Hour</td>
+          <td>$15k</td>
+          <td>$7k</td>
+          <td>9.3K Users</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Forms in HTML -->
+
+    <form action="">
+      <input type="text" id="userName" placeholder="Enter you userName : " />
+      <input type="button" value="Please Press me" />
+      <span>Are you a Student ?</span>
+      <input type="checkbox" value="He is a Student" name="isStudent" />
+      <!-- checked attribute for mark it as checked -->
+      <span>Select your theme</span>
+      <input type="color" name="color" value="#46349d" />
+      <input type="email" placeholder="Enter your Email : " />
+      <input type="password" placeholder="Enter your Password : " />
+      <span>Select any data you wish :</span>
+      <input type="date" />
+      <span>Choose a file</span>
+      <input type="file" />
+      <input type="number" placeholder="Enter just a random number" max="100" />
+      <input type="submit" value="Submit" />
+      <input type="reset" />
+      <input type="radio" />
+      <!-- ITs used with label for better understanding -->
+      <input type="datetime-local" />
+      <input type="image" />
+      <!--Add a Image as a submit button -->
+      <input type="hidden" />
+      <input type="range" min="0" max="100" step="10" />
+      <input type="search" />
+      <input type="tel" />
+      <input type="url" />
+
+      <label for="userName">Enter you username</label>
+
+      <!-- 
+	disabled - to make a input field not accessible
+	max/min - set a max/min value to fields like range, number etc..
+	maxLenght - set a limit to number of character.
+	readonly - make it unchangeable
+	required - must be filled to submit the form
+	size - to specify the width
+	step - by how much the value will be changed i.e - for range input
+	value - to add a default value to any field
+-->
+
+      <textarea
+        name="message"
+        id="message"
+        placeholder="Enter any thing :"
+        rows="10"
+        cols="75"
+      ></textarea>
+
+      <select name="Gender" id="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+     <svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" fill="red" />
+</svg>
+
+      <!-- 
+      <iframe
+        width="450"
+        height="250"
+        src="https://www.youtube.com/embed/Z-e6gUrBDjo"
+        title="The INSANELY Fast Production of Whiplash (2014)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe> -->
+
+      <video
+        src="./Assets/Fake Video.mp4"
+        height="250"
+        controls
+        muted
+        poster="https://stimg.cardekho.com/images/carexteriorimages/930x620/Honda/Civic/7740/1585801296746/front-left-side-47.jpg"
+      >
+        Play me please
+      </video>
+
+      <audio
+        src="./Assets/sound.mp3"
+        controls
+        preload="metadata"
+        autoplay
+        muted
+        loop
+      >
+        A Random Audio File From my machine
+      </audio>
+    </form>
+
+    <!-- Quotation Tags -->
+
+    <blockquote cite="Robin">There is no tommorow.</blockquote>
+    <q cite="Robin">There is no tommorow.</q>
+
+    <code>
+      <pre>
+            <blockquote cite="Robin">There is no tommorow.</blockquote>
+            <q cite="Robin">There is no tommorow.</q>
+        </pre>
+    </code>
+  </body>
 </html>
