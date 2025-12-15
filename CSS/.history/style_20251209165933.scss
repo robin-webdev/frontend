@@ -1,0 +1,26 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+html,
+body {
+    height : 100%;
+    width : 100%;
+}
+
+
+
+@font-face {
+    font-family: horror;
+    src: url(./Blood\ Victim\ Zombie.ttf);
+}
+
+h1{
+    color: red;
+    background-color: black;
+    padding: 100px;
+    font-size: 600px;
+    font-family: horror;
+    font-weight: 900;
+}   

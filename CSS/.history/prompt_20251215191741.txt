@@ -1,0 +1,104 @@
+Alright, no worries about that, as I just finished my CSS Lectures from the course that I was doing (Sheryians Coding School Cohort 2.O), now I want to prepare notes for my notion, like I did for HTML. And I don't know spend hours of my precious time to just sit and write everything down by myself.
+
+So I want you to prepare notes of CSS for me, It should be short notes, just to go throuh whenever I want to. I will mention everything that you need to cover in the notes this time don't write anything about css, I will provide you my HTML Notes that we have made and you just need to analyze how You are supposed to be making my CSS notes. Again don't make the notes now just analyse and let me know if it clear to you.
+
+
+
+What is CSS
+Different types of color systems
+Different types of selectors
+Text properties
+font properties like weight and family
+Units in css (px, rem, em, %, vw, vh, vmax, vmin and so on)
+border and its properties
+#Note We cannot add height and width to inline elements
+Little bit about padding and Margin
+Shorthands for properties
+Display Property
+Visibility
+min/max-width/height
+Position
+#Note - Filter/perspective/transform will work if element is positioned
+z-index
+background images and its properties like - cover and so on
+Flexbox and its all of properties - flex-wrap/grow/shrink/flow and align-self/ 
+item properties - order
+main and cross axes
+#Note - align self have more priority that align items
+Media Querries
+transitions and its properties
+pseudo classes
+transform and its properties (rotate, scale, translate and skew and origin)
+Animations - keyframes, name, duration, timing-functions, delay, iteration count, direction, Shorthands
+Percetage in Animations, animation play state, fill mode
+Content delivery Network
+box-sizing: border-box/content-box/padding-box/ text
+
+window.getomputedstyle(element).animation
+different types of selectors like div > p and div p and *
+pseudo selectors like a:visited/link/active and first child/ nth child and so on
+margin collapse
+text-indent
+text-overflow and its different properties
+overflow- scroll/hidden/auto
+word-break
+Specificity in css - the cascade algorithm
+!important > inline style > id selector > class or attribute > element > universal
+.class :: first-line/letter and so on
+[att-name = value] {}/ div::before/ div::after/selection
+margin auto for block elements
+box shadow in advanced
+text shadow
+outline
+css properties for lists - style/ position/ type etc
+white-space
+CSS Variables 
+:root {--varName : value;}
+var(--varName, alternate value)
+css float and clear properties
+
+css grid in detail
+grid template row/columns
+grid-row/column - grid-row-start : 2, grid-row-end 4 or grid-row: (2, 4)
+naming grid rows and columns
+grid template areas
+fr Units
+gap in grid
+place-item/ justify-item/ allign-item/ allign-self/ justify-content/ align-content
+repeat functions
+minmax functions
+object-fit - cover/contain/ object-position fill scale-down background-position/size/repeat/clip etc
+css filters - brightness/ contrast/ sepia/ grayscale/ blur/ drop shadow/ invert / opacity
+
+The important properties are these - 
+
+// Adding Font Families - with font face
+// Getting Fonts from websites
+// Linear/Raidal/Conic Gradients
+// Backgroud Images Properties
+// Position - Absolute, Linear, Fixed and Sticky
+// Main and cross Axes
+// Centering a div using translate and absolute properties
+// flex shrink
+// box shadow
+// transform - translate, rotate in different axes
+// inline and block elements
+// clip path
+// display grid
+// shortcuts for adding divs like .child*5
+// nth child selectors in css including cases of n like 2n, 3n etc.
+// background clip text
+// -webkit-text-stroke : width color;
+// -webkit-scrollbar
+// -webkit-scrollbar-thumb
+// Minmax fUNCTION 
+// grid-gap = row-gap + comumn-gap
+// .child#child$*5
+// Grid Areas
+// Units in css - pixels, percent, vw(viewport's width), vmax (viewport maximum), vmin (viewport minimum), em, rem
+// SCSS - Nesting, Mixin 
+// Flex Grow
+// Clamp function
+// opacity
+// aspect ratio
+// backdrop filter (blur)

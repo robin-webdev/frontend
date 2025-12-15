@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: horror;
+  src: url(./Blood\ Victim\ Zombie.ttf);
+}
+
+main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  section {
+    height: 100%;
+    background-color: aqua;
+    border: 2px solid black;
+    flex-grow: 1;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    
+  }
+
+  .section
+
+  section:hover{
+    flex-grow: 3;
+  }
+
+ 
+}
