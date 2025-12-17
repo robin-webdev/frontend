@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(38, 38, 38);
+}
+
+.quote::before {
+  content: "<"; /* Adds opening quote */
+  font-size: 2em;
+  color: #999;
+}
+
+.quote::after {
+  content: ">"; /* Adds closing quote */
+  font-size: 2em;
+  color: #999;
+}
+
+.icon::before {
+  content: "★"; /* Adds star icon before text */
+  display: inline-block;
+  padding: 15px;
+  color: white;
+}
+
+.section2::selection {
+  background-color: #ff6b6b; /* Color when text is highlighted */
+  color: white;
+}
+
+.section2 {
+  p::selection {
+    background-color: yellow; /* Specific to paragraphs */
+    color: black;
+  }
+}
+
+.section3 {
+  // text-indent: 50px;
+  // letter-spacing: 5px;
+  // text-align: center;
+
+  p {
+    // word-break: break-all;
+    white-space: nowrap;
+    overflow: ;
+  }
+}
