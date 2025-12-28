@@ -43,23 +43,23 @@ let name = "Robin";
 // const age = 18;
 // var city = "Riga";
 
-// function displayInfo({name, age}) {
-//   console.log(`Name: ${name}, Age: ${age}`);
-// }
-// displayInfo({name, age});
+function displayInfo({name, age}) {
+  console.log(`Name: ${name}, Age: ${age}`);
+}
+displayInfo({name, age});
 
-// let object = {
-//   name: "Robin",
-//   age: 18,
-//   city: "Riga",
-//   func: function () {
-//     console.log(this);
-//     let innerFunc = () => {
-//       console.log(this);
-//     };
-//     innerFunc();
-//   },
-// };
+let object = {
+  name: "Robin",
+  age: 18,
+  city: "Riga",
+  func: function () {
+    console.log(this);
+    let innerFunc = () => {
+      console.log(this);
+    };
+    innerFunc();
+  },
+};
 
 // let func2 = () => {
 //   console.log(this);
