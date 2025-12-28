@@ -84,62 +84,62 @@ addButton("Button 1");
 addButton("Button 2");
 addButton("Button 3");
 
-// // Event delegation - ONE listener for ALL buttons (even future ones!)
-// container.addEventListener('click', function(event) {
-//   if (event.target.classList.contains('toggle-btn')) {
-//     // 'this' refers to container (not what we want)
-//     // event.target refers to the clicked button (what we want!)
-//     event.target.classList.toggle('active');
-//   }
-// });
+// Event delegation - ONE listener for ALL buttons (even future ones!)
+container.addEventListener('click', function(event) {
+  if (event.target.classList.contains('toggle-btn')) {
+    // 'this' refers to container (not what we want)
+    // event.target refers to the clicked button (what we want!)
+    event.target.classList.toggle('active');
+  }
+});
 
-// // Add more buttons later - they automatically work!
-// setTimeout(() => {
-//   addButton('Button 4'); // This will also work without new listeners
-// }, 2000);
+// Add more buttons later - they automatically work!
+setTimeout(() => {
+  addButton('Button 4'); // This will also work without new listeners
+}, 2000);
 
-// // A reusable toggle function
-// function toggleButton() {
-//   this.classList.toggle('active');
+// A reusable toggle function
+function toggleButton() {
+  this.classList.toggle('active');
 
-//   if (this.classList.contains('active')) {
-//     this.textContent = 'ON';
-//     this.style.backgroundColor = 'green';
-//   } else {
-//     this.textContent = 'OFF';
-//     this.style.backgroundColor = 'red';
-//   }
-// }
+  if (this.classList.contains('active')) {
+    this.textContent = 'ON';
+    this.style.backgroundColor = 'green';
+  } else {
+    this.textContent = 'OFF';
+    this.style.backgroundColor = 'red';
+  }
+}
 
-// // Apply to multiple buttons
-// document.querySelectorAll('.toggle-btn').forEach(button => {
-//   button.addEventListener('click', toggleButton);
-//   // 'this' inside toggleButton will be whichever button was clicked
-// });
+// Apply to multiple buttons
+document.querySelectorAll('.toggle-btn').forEach(button => {
+  button.addEventListener('click', toggleButton);
+  // 'this' inside toggleButton will be whichever button was clicked
+});
 
 const numbers = [1, 2, 3, 3, 4, 4, 5];
 
-// Array.prototype.hashMap = function (fnc) {
-//   for (let index = 0; index < this.length; index++) {
-//     console.log()
-//     this[index] = fnc(this[index]);
-//   }
-//   return this;
+Array.prototype.hashMap = function (fnc) {
+  for (let index = 0; index < this.length; index++) {
+    console.log()
+    this[index] = fnc(this[index]);
+  }
+  return this;
+};
+
+const newArray = numbers.hashMap((x) => x ** 2);
+console.log(newArray)
+
+const sum = numbers.reduce((accumulator, current) => {
+  return accumulator + current;
+}, 0);
+
+console.log(sum)
+
+// Object.prototype.freeze = function () {
+//   Object.freeze(this);
 // };
 
-// const newArray = numbers.hashMap((x) => x ** 2);
-// console.log(newArray)
-
-// const sum = numbers.reduce((accumulator, current) => {
-//   return accumulator + current;
-// }, 0);
-
-// console.log(sum)
-
-Object.prototype.freeze = function () {
-  Object.freeze(this);
-};
-
-let obj = {
-  name: "Robin",
-};
+// let obj = {
+//   name: "Robin",
+// };
