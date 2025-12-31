@@ -10,7 +10,8 @@
   src: url(./Blood\ Victim\ Zombie.ttf); /* Path to font file */
 }
 html,
-body {
+body,
+main {
   height: 100%;
   width: 100%;
   background-color: rgb(38, 38, 38);
@@ -45,11 +46,14 @@ body {
   color: white;
 }
 
+.section2 p {
+  font-size: 25px;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999; /* 3D extrusion */
+}
 .section2 p::-moz-selection {
   background-color: yellow; /* Specific to paragraphs */
   color: black;
 }
-
 .section2 p::selection {
   background-color: yellow; /* Specific to paragraphs */
   color: black;
@@ -91,8 +95,6 @@ body {
 }
 .section5 h2 {
   font-family: horror;
-  /* filter: ; */
-  /* filter: drop-shadow(50px); */
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
@@ -152,4 +154,18 @@ body {
   flex-basis: 200px;
   order: 5;
   align-self: flex-end;
+}
+.section8 .box:nth-child(1) {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(85, 255, 0, 0.24); /* Layered depth */
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-backdrop-filter: brightness(0.5) blur(0px);
+          backdrop-filter: brightness(0.5) blur(0px); /* Darkens background */
 }/*# sourceMappingURL=style.css.map */

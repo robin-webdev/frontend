@@ -16,7 +16,8 @@
 }
 
 html,
-body {
+body,
+main {
   height: 100%;
   width: 100%;
   background-color: rgb(38, 38, 38);
@@ -47,6 +48,16 @@ body {
 }
 
 .section2 {
+  p {
+    font-size: 25px;
+    // text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3); /* Subtle depth */
+    // text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.5); /* Strong shadow */
+    // text-shadow: 0 0 10px #000000, 0 0 20px #00f; /* Neon glow */
+    // text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    //   1px 1px 0 #ffffff; /* Text outline effect */
+    text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999; /* 3D extrusion */
+  }
+
   p::selection {
     background-color: yellow; /* Specific to paragraphs */
     color: black;
@@ -139,7 +150,7 @@ body {
   }
 }
 
-.section8{
+.section8 {
   height: 500px;
   @include center();
   gap: 10px;
@@ -148,18 +159,50 @@ body {
   // align-content: space-evenly;
   align-items: center;
 
-  .box{
+  .box {
     background-color: #ff6b6b;
     height: 70px;
     width: 130px;
     border-radius: 5px;
   }
-  
-  .box:nth-child(2){
+
+  .box:nth-child(2) {
     // flex-grow: 1;
     flex-basis: 200px;
     // flex-shrink: 3;
     order: 5;
     align-self: flex-end;
   }
+
+  .box:nth-child(1) {
+    // box-shadow: 0 4px 6px rgba(194, 25, 25, 0.1); /* Subtle elevation */
+    // box-shadow: 0 10px 30px rgba(209, 47, 47, 0.2); /* Strong depth */
+    // box-shadow: inset 0 2px 4px rgba(0, 255, 21, 0.3); /* Inner shadow */
+    // box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); /* Glowing effect */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(85, 255, 0, 0.24); /* Layered depth */
+  }
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  // filter: blur(5px); /* Gaussian blur: 0-10px typical */
+  // filter: brightness(1.5); /* 0 = black, 1 = normal, 2+ = bright */
+  // filter: contrast(200%); /* 0% = gray, 100% = normal, 200%+ = high */
+  // filter: grayscale(100%); /* 0% = color, 100% = full grayscale */
+  // filter: sepia(80%); /* 0% = normal, 100% = vintage sepia */
+  // filter: invert(1); /* 0 = normal, 1 = inverted colors */
+  // filter: opacity(0.5); /* 0 = invisible, 1 = opaque */
+  // filter: saturate(200%); /* 0% = grayscale, 100% = normal, 200%+ = vibrant */
+  // filter: hue-rotate(90deg); /* Rotates colors: 0-360deg */
+
+  // filter: sepia(60%) contrast(120%) brightness(90%);
+  // filter: blur(8px) brightness(1.1);
+  // filter: drop-shadow(2px 4px 6px rgba(182, 38, 38, 0.3));
+  backdrop-filter: brightness(0.5) blur(0px); /* Darkens background */  
 }
