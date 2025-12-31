@@ -43,23 +43,23 @@ let name = "Robin";
 // const age = 18;
 // var city = "Riga";
 
-function displayInfo({name, age}) {
-  console.log(`Name: ${name}, Age: ${age}`);
-}
-displayInfo({name, age});
+// function displayInfo({name, age}) {
+//   console.log(`Name: ${name}, Age: ${age}`);
+// }
+// displayInfo({name, age});
 
-let object = {
-  name: "Robin",
-  age: 18,
-  city: "Riga",
-  func: function () {
-    console.log(this);
-    let innerFunc = () => {
-      console.log(this);
-    };
-    innerFunc();
-  },
-};
+// let object = {
+//   name: "Robin",
+//   age: 18,
+//   city: "Riga",
+//   func: function () {
+//     console.log(this);
+//     let innerFunc = () => {
+//       console.log(this);
+//     };
+//     innerFunc();
+//   },
+// };
 
 // let func2 = () => {
 //   console.log(this);
@@ -73,68 +73,68 @@ let object = {
 // const container = document.getElementById('container');
 
 // Add buttons dynamically
-function addButton(text) {
-  const button = document.createElement("button");
-  button.textContent = text;
-  button.className = "toggle-btn";
-  container.appendChild(button);
-}
+// function addButton(text) {
+//   const button = document.createElement("button");
+//   button.textContent = text;
+//   button.className = "toggle-btn";
+//   container.appendChild(button);
+// }
 
-addButton("Button 1");
-addButton("Button 2");
-addButton("Button 3");
+// addButton("Button 1");
+// addButton("Button 2");
+// addButton("Button 3");
 
 // Event delegation - ONE listener for ALL buttons (even future ones!)
-container.addEventListener('click', function(event) {
-  if (event.target.classList.contains('toggle-btn')) {
-    // 'this' refers to container (not what we want)
-    // event.target refers to the clicked button (what we want!)
-    event.target.classList.toggle('active');
-  }
-});
+// container.addEventListener('click', function(event) {
+//   if (event.target.classList.contains('toggle-btn')) {
+//     // 'this' refers to container (not what we want)
+//     // event.target refers to the clicked button (what we want!)
+//     event.target.classList.toggle('active');
+//   }
+// });
 
 // Add more buttons later - they automatically work!
-setTimeout(() => {
-  addButton('Button 4'); // This will also work without new listeners
-}, 2000);
+// setTimeout(() => {
+//   addButton('Button 4'); // This will also work without new listeners
+// }, 2000);
 
 // A reusable toggle function
-function toggleButton() {
-  this.classList.toggle('active');
+// function toggleButton() {
+//   this.classList.toggle('active');
 
-  if (this.classList.contains('active')) {
-    this.textContent = 'ON';
-    this.style.backgroundColor = 'green';
-  } else {
-    this.textContent = 'OFF';
-    this.style.backgroundColor = 'red';
-  }
-}
+//   if (this.classList.contains('active')) {
+//     this.textContent = 'ON';
+//     this.style.backgroundColor = 'green';
+//   } else {
+//     this.textContent = 'OFF';
+//     this.style.backgroundColor = 'red';
+//   }
+// }
 
 // Apply to multiple buttons
-document.querySelectorAll('.toggle-btn').forEach(button => {
-  button.addEventListener('click', toggleButton);
-  // 'this' inside toggleButton will be whichever button was clicked
-});
+// document.querySelectorAll('.toggle-btn').forEach(button => {
+//   button.addEventListener('click', toggleButton);
+// 'this' inside toggleButton will be whichever button was clicked
+// });
 
-const numbers = [1, 2, 3, 3, 4, 4, 5];
+// const numbers = [1, 2, 3, 3, 4, 4, 5];
 
-Array.prototype.hashMap = function (fnc) {
-  for (let index = 0; index < this.length; index++) {
-    console.log()
-    this[index] = fnc(this[index]);
-  }
-  return this;
-};
+// Array.prototype.hashMap = function (fnc) {
+//   for (let index = 0; index < this.length; index++) {
+//     console.log()
+//     this[index] = fnc(this[index]);
+//   }
+//   return this;
+// };
 
-const newArray = numbers.hashMap((x) => x ** 2);
-console.log(newArray)
+// const newArray = numbers.hashMap((x) => x ** 2);
+// console.log(newArray)
 
-const sum = numbers.reduce((accumulator, current) => {
-  return accumulator + current;
-}, 0);
+// const sum = numbers.reduce((accumulator, current) => {
+//   return accumulator + current;
+// }, 0);
 
-console.log(sum)
+// console.log(sum)
 
 // Object.prototype.freeze = function () {
 //   Object.freeze(this);
@@ -143,3 +143,20 @@ console.log(sum)
 // let obj = {
 //   name: "Robin",
 // };
+
+let cont = document.querySelector(".container");
+
+let count = 0;
+
+let inc = document.querySelector("#inc");
+let dec = document.querySelector("#dec");
+
+
+inc.addEventListener("click", function () {
+  count++;
+  cont.textContent = count;
+});
+dec.addEventListener("click", function () {
+  count--;
+  cont.textContent = count;
+});
