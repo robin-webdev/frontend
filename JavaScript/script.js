@@ -195,3 +195,22 @@ document.querySelector("#team").addEventListener("click", function () {
   cont.style.color = randomTeam.primary;
   cont.style.backgroundColor = randomTeam.secondary;
 });
+
+let section1 = document.querySelector("#sec1");
+let addButton = document.querySelector("#addbtn");
+
+addButton.addEventListener("click", function () {
+  let div = document.createElement("div");
+  div.style.borderRadius = "7px";
+  div.style.height = "50px";
+  div.style.width = "50px";
+  div.style.position = "absolute";
+  div.style.backgroundColor = "royalblue";
+  div.style.color = "white";
+  section1.appendChild(div);
+  div.style.left = `${getRandom(100)}%`;
+  div.style.top = `${getRandom(100)}%`;
+  div.style.backgroundColor = `rgb(${getRandom(255)}, ${getRandom(
+    255
+  )}, ${getRandom(255)})`;
+});
