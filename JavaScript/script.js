@@ -214,3 +214,21 @@ addButton.addEventListener("click", function () {
     255
   )}, ${getRandom(255)})`;
 });
+
+document.querySelector(".download").addEventListener("click", function () {
+  document.querySelector(".download").disabled = true;
+  document.querySelector(".download").textContent = "Downloading...";
+  const progressBar = document.querySelector(".inner");
+  const progressTag = document.querySelector("h1");
+  let progress = 0;
+  const id = setInterval(() => {
+    progress++;
+    progressTag.textContent = progress + "%";
+    progressBar.style.width = progress + "%";
+    if (progress == 100) {
+      clearInterval(id);
+      document.querySelector(".download").textContent = "Downloaded";
+      document.querySelector(".download").style.opacity = "0.7";
+    }
+  }, 5);
+});

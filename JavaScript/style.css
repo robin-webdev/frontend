@@ -37,10 +37,50 @@ button {
   justify-content: center;
 }
 
-#sec1 {
+section {
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+#sec2 {
+  width: 70%;
+  margin: 30px;
+  height: 50%;
+  background-color: white;
+  top: 28%;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.outer {
+  width: 90%;
+  height: 20px;
+  background-color: gray;
+  border-radius: 9px;
+  margin-top: 9px;
+  overflow: hidden;
+}
+
+.inner {
+  height: 100%;
+  background-color: rgb(7, 198, 7);
+  width: 0%;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  width: 0%;
+}
+
+.other {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.other h1{
+  font-family: monospace;
+  font-weight: 600;
 }
