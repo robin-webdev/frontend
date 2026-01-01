@@ -26,7 +26,12 @@ button {
 }
 
 .container {
-    color: white;
-    font-family: 900;
-    
+  color: white;
+  font-family: 900;
+  width: 50%;
+  height: 30%;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
 }

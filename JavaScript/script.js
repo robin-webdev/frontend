@@ -150,7 +150,17 @@ let count = 0;
 
 let inc = document.querySelector("#inc");
 let dec = document.querySelector("#dec");
+let col = document.querySelector("#col");
 
+function getRandom(n) {
+  return Math.floor(Math.random() * n);
+}
+
+col.addEventListener("click", function () {
+  cont.style.backgroundColor = `rgb(${getRandom(255)}, ${getRandom(
+    255
+  )}, ${getRandom(255)})`;
+});
 
 inc.addEventListener("click", function () {
   count++;
@@ -159,4 +169,29 @@ inc.addEventListener("click", function () {
 dec.addEventListener("click", function () {
   count--;
   cont.textContent = count;
+});
+
+const teams = [
+  {
+    team: "RCB",
+    primary: "red",
+    secondary: "blue",
+  },
+  {
+    team: "CSK",
+    primary: "green",
+    secondary: "white",
+  },
+  {
+    team: "MI",
+    primary: "royalblue",
+    secondary: "crimson",
+  },
+];
+
+document.querySelector("#team").addEventListener("click", function () {
+  let randomTeam = teams[getRandom(3)];
+  cont.textContent = randomTeam.team;
+  cont.style.color = randomTeam.primary;
+  cont.style.backgroundColor = randomTeam.secondary;
 });
