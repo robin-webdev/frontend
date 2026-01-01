@@ -8,12 +8,12 @@ body {
   height: 100%;
   width: 100%;
   background: #000;
-  display: flex;
+  display: flex; 
   /* justify-content: center; */
   align-items: center;
   flex-direction: column-reverse;
   gap: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 button {
@@ -80,7 +80,15 @@ section {
   width: 100%;
 }
 
-.other h1{
+.other h1 {
   font-family: monospace;
   font-weight: 600;
+}
+
+.sec3 {
+  height: 500px;
+}
+
+img {
+  height: 500px;
 }

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+section {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  /* margin: auto; */
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+img {
+  height: 300px;
+  border-radius: 5px;
+  width: 250px;
+  object-fit: cover;
+}
+
+h1 {
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+}
+
+section div {
+  position: relative;
+}
+
+i {
+  position: absolute;
+  color: crimson;
+  scale: 0;
+  opacity: 0;
+  transform: rotate(90deg);
+  transition: all 0.3s cubic-bezier(0.5, 0.43, 0.79, 1.65);
+  top: 50%;
+  left: 50%;
+}
