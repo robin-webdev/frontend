@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #ebebeb;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0px -50px;
+  position: absolute;
+}
+
+.keys {
+  perspective: 200px;
+  position: absolute;
+  bottom: 30px;
+  left: 200px;
+  z-index: 1;
+  display: flex;
+  gap: 1px;
+  box-shadow: 0 0.9rem 1.5rem -0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.keyW {
+  background-color: rgb(255, 255, 255);
+  height: 35px;
+  width: 15px;
+  transform: rotateX(45deg);
+  transform-style: preserve-3d;
+  border-radius: 2px;
+}
+.keyB {
+  background-color: black;
+  height: 25px;
+  border-radius: 2px;
+  width: 15px;
+  transform: rotateX(45deg);
+  transform-style: preserve-3d;
+}
+
+.keysB {
+  position: absolute;
+  perspective: 200px;
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
+}
