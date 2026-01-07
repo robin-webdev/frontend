@@ -14,13 +14,13 @@ function getRandom(m) {
   return Math.floor(Math.random() * m);
 }
 
-body.addEventListener("keydown", (evt) => {
+body.addEventListener("keydown", (evt) => {[]
   let { key } = evt;
   const act = pianoKeys.find((a) => a.key === key.toUpperCase());
 
   if (!act) return;
 
-  const aud = new Audio(`./assets/${act.sound}`);
+  const aud = new Audio(`./assets/${act.sound}`);[]
   aud.play();
 
   const keys = document.querySelectorAll(".justkey");

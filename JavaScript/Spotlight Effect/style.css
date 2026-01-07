@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  cursor: none;
+}
+
+div {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: radial-gradient(120px, white, black);
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
