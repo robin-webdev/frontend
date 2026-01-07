@@ -1,8 +1,6 @@
 const body = document.querySelector("main");
-console.log(body);
-const div = document.querySelector("div");
+const div = document.body;
 body.addEventListener("mousemove", (evt) => {
-  console.log(evt.x, evt.y);
-  div.style.top = evt.y + "px";
-  div.style.left = evt.x + "px";
+  div.style.setProperty("--y", evt.y + "px");
+  div.style.setProperty("--x", evt.x + "px");
 });

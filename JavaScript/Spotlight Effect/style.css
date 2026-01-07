@@ -8,20 +8,26 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background: url("../Piano/assets/piano.png");
+}
+
+:root {
+  --x: 0;
+  --y: 0;
 }
 
 main {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background: radial-gradient(130px at var(--x) var(--y), transparent, rgba(0, 0, 0, 0.927));
   cursor: none;
 }
 
-div {
+/* div {
   height: 250px;
   width: 250px;
   border-radius: 50%;
   background: radial-gradient(120px, white, black);
   position: absolute;
   transform: translate(-50%, -50%);
-}
+} */
