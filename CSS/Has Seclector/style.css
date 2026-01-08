@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  /* gap: 17px; */
+  justify-content: center;
+}
+
+/* main {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.box {
+  padding: 50px 60px;
+  margin: 10px;
+  border-radius: 7px;
+  background-color: royalblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transition: all 0.3s linear;
+}
+
+body:has(.box:hover) .box {
+  transform: scale(0.9);
+  opacity: 0.4;
+}
+.box:hover {
+  opacity: 1 !important;
+  transform: scale(1.2) !important;
+}
+
+.anchor {
+  background-color: rgb(68, 68, 68);
+  border-radius: anchor(border-radius);
+  position: absolute;
+  position-anchor: --navActive;
+  top: anchor(top);
+  left: anchor(left);
+  bottom: anchor(bottom);
+  right: anchor(right);
+  pointer-events: none;
+  mix-blend-mode: color;
+  transition: all 0.2s linear;
+}
