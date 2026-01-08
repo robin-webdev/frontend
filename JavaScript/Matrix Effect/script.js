@@ -8,9 +8,9 @@ const random = () => {
   return Math.floor(Math.random() * 25);
 };
 
+let arr = h1.textContent.split("");
+let og = [...arr];
 h1.addEventListener("mouseover", () => {
-  let arr = h1.textContent.split("");
-  let og = [...arr];
   arr.forEach((ele, i) => {
     let id = setInterval(() => {
       arr[i] = letters[random()];
