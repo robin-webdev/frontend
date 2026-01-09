@@ -68,6 +68,13 @@ video {
   font-size: small;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.action div .active {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.action div .nonactive {
+  background-color: rgba(48, 48, 48, 0.707);
+}
 .action div i {
   background-color: rgba(48, 48, 48, 0.707);
   padding: 15px;
