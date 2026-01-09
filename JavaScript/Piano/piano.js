@@ -4,7 +4,7 @@ const pianoKeys = Array.from({ length: 26 }, (_, i) => ({
   key: String.fromCharCode(65 + i),
   sound: `${28 + i}.mp3`,
 }));
-
+ 
 pianoKeys.forEach((act) => {
   const aud = new Audio(`./assets/${act.sound}`);
   //   aud.play();

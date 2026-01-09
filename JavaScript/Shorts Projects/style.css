@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(36, 36, 36);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+.reel {
+  /* scroll-snap-align: center; */
+  flex: none;
+  height: 100vh;
+  width: 400px;
+  border: 2px solid royalblue;
+}
+
+video {
+  height: 100%;
+  background-position: center;
+}
