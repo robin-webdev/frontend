@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
 html,
 body {
   height: 100%;
@@ -13,18 +17,30 @@ body {
 main {
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+  padding: 10px 0;
 }
 
 .reel {
-  /* scroll-snap-align: center; */
+  scroll-snap-align: center;
   flex: none;
-  height: 100vh;
-  width: 400px;
-  border: 2px solid royalblue;
+  height: 97vh;
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 video {
