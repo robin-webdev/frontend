@@ -160,3 +160,28 @@ const showData = () => {
 };
 
 showData();
+const videos = document.querySelectorAll("video");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+
+      if (entry.intersectionRatio === 0) {
+        video.pause();
+        video.currentTime = 0;
+        video.muted = true;
+      }
+
+      if (entry.intersectionRatio >= 0.6) {
+        video.play();
+        video.muted = false;
+        video.volume = 0.3;
+      }
+    });
+  },
+  {
+    threshold: [0, 0.6],
+  }
+);
+videos.forEach((video) => observer.observe(video));
