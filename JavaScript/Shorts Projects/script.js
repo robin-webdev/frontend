@@ -1,1 +1,73 @@
- 
+const data = [
+  {
+    channel: "The Kangaroo TV",
+    title: "Learn how to make a spotlight effect using CapCut",
+    avatar: "imageAddress1",
+    like: 1234,
+    isLiked: false,
+    dislike: 59,
+    isDisLiked: false,
+    comments: 56,
+    muted: true,
+  },
+  {
+    channel: "Code With Robin",
+    title: "Scroll snapping in CSS explained simply",
+    avatar: "imageAddress2",
+    like: 982,
+    isLiked: true,
+    dislike: 21,
+    isDisLiked: false,
+    comments: 34,
+    muted: false,
+  },
+  {
+    channel: "Design Dose",
+    title: "Minimal UI tricks you should steal",
+    avatar: "imageAddress3",
+    like: 2145,
+    isLiked: false,
+    dislike: 88,
+    isDisLiked: false,
+    comments: 143,
+    muted: false,
+  },
+  {
+    channel: "Dev Shorts",
+    title: "Flexbox vs Grid in 60 seconds",
+    avatar: "imageAddress4",
+    like: 1567,
+    isLiked: false,
+    dislike: 42,
+    isDisLiked: false,
+    comments: 79,
+    muted: true,
+  },
+  {
+    channel: "Logic Lab",
+    title: "Why most beginners misuse JavaScript arrays",
+    avatar: "imageAddress5",
+    like: 3012,
+    isLiked: true,
+    dislike: 64,
+    isDisLiked: false,
+    comments: 201,
+    muted: false,
+  },
+  {
+    channel: "UI Academy",
+    title: "Build a TikTok-style scroll experience with pure CSS",
+    avatar: "imageAddress6",
+    like: 1876,
+    isLiked: false,
+    dislike: 33,
+    isDisLiked: false,
+    comments: 98,
+    muted: true,
+  },
+];
+
+
+const showData = () => {
+    
+}
