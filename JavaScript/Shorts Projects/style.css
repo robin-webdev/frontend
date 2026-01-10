@@ -99,6 +99,7 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  box-shadow: 0 0 0.5rem black;
 }
 .dets .inside {
   display: flex;
@@ -107,16 +108,27 @@ video {
 }
 .dets .channel {
   font-weight: 500;
-  text-shadow: 0 0 3rem rgb(0, 0, 0);
+  text-shadow: 0 0 0.5rem rgb(0, 0, 0);
   display: inline-block;
   padding: 3px;
   border-radius: 3px;
 }
 .dets .title {
-  text-shadow: 0 0 3rem black;
+  text-shadow: 0 0 0.5rem rgb(0, 0, 0);
   display: inline-block;
   padding: 3px;
   font-size: small;
   border-radius: 3px;
   max-width: 300px;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  color: crimson;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  text-shadow: 0 0 1rem crimson;
+  top: 20px;
 }/*# sourceMappingURL=style.css.map */

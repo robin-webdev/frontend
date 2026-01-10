@@ -99,6 +99,10 @@ function reload() {
         data[i].like--;
       } else {
         data[i].isLiked = true;
+        if (data[i].isDisLiked) {
+          data[i].isDisLiked = false;
+          data[i].dislike--;
+        }
         data[i].like++;
       }
       reload();
@@ -111,6 +115,10 @@ function reload() {
         data[i].isDisLiked = false;
         data[i].dislike--;
       } else {
+        if (data[i].isLiked) {
+          data[i].isLiked = false;
+          data[i].like--;
+        }
         data[i].isDisLiked = true;
         data[i].dislike++;
       }
@@ -163,25 +171,25 @@ showData();
 const videos = document.querySelectorAll("video");
 
 const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      const video = entry.target;
-
-      if (entry.intersectionRatio === 0) {
-        video.pause();
-        video.currentTime = 0;
-        video.muted = true;
+  (enteries, observer) => {
+    enteries.forEach((entry) => {
+      if (entry.intersectionRatio > 0.3) {
+        entry.target.volume = 0.4;
+        entry.target.muted = false;
+        entry.target.play();
       }
-
-      if (entry.intersectionRatio >= 0.6) {
-        video.play();
-        video.muted = false;
-        video.volume = 0.3;
+      if (entry.intersectionRatio === 0) {
+        entry.target.pause();
+        entry.target.currentTime = 0;
       }
     });
   },
-  {
-    threshold: [0, 0.6],
-  }
+  { threshold: [0, 0.6] }
 );
-videos.forEach((video) => observer.observe(video));
+
+videos.forEach((video) => {
+  observer.observe(video);
+  video.addEventListener("click", () => {
+    
+  });
+});
