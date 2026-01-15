@@ -78,3 +78,37 @@ class inheritence using extends keyword
 method overriding, super method
 overriding constructors
 static methods in oops
+getter and setter with a good example
+public and private variables
+IIFE - for keeping variables private
+destructuring, and its different cases
+spread operator
+shalow copy and deep cloning
+Hoisting with let const and var and fuctions
+Date Object - current date and time, specific data and time
+methods - getFullyear/month...., setFullyear/...
+Date.now()
+Local Storage approx storage, localstorage.setItem/getItem/removeItem.clear
+JSON.parse and stringify
+Object methods -> Object.\* - keys, values, entries, freeze, assign, seal
+Arrays methods -> some, every, find, sort, findIndex, includes - include callback functions
+Scroll related functions - window.scrollTo(x,y)/scrollBy/scrollIntoView/onScroll, node.scrollHeight
+Sessions storage and its use case
+Cookies and its usecase adding updating adn deleting a cookie
+cookie props like expires, path etc
+function statement vs function expression
+obj.name vs obj[name]
+Optional chaining
+obj = {[variab] : "Robin"}
+Event capturing
+block global and functional scope 
+execution context -> memory phase and execution phase
+dynamic scoping and lexical scoping
+different values of this keyword in different cases
+apply call and bind
+prototype vs __proto__
+Math.random() and Math.floor()
+node.appendChild
+Everything to know about JSON
+Intersection observer and its ex
+class hoisting
