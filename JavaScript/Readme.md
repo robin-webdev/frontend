@@ -61,5 +61,20 @@ Symbol() in js and its usecase
 Number.maxSafeInteger
 bigInt and its usecase
 
-
-
+Type coercion in js
+Truth and falsy values - 0, false, "", null, undefined, NaN, document.all and the rest is true
+instanceOf keyword
+switch case in js
+Difference between HTMLCollection, NodeList and arrays
+Error Handling in js - try, catch and finally and err object
+synchronous nature of try catch and script dying
+Throwing custom errors
+Object Oriented Programming
+prototypes, [[prototype]], prototypical inheritence, **proto**
+classes and objects
+constructor function in class
+this keyword in class, object, and different types of functions
+class inheritence using extends keyword
+method overriding, super method
+overriding constructors
+static methods in oops
