@@ -112,3 +112,22 @@ node.appendChild
 Everything to know about JSON
 Intersection observer and its ex
 class hoisting
+OOPs without class keyword using functions - the old school method
+js being single threaded language
+call stack, event loop, threads, multi-threading
+Debouncing and throttling with ex
+Design patterns in js - module, revealing module, factory function, observer pattern
+performace optimization - lazy loading using intersect observer, dataset for images, code splitting amoung modules
+createDocumentFragment();
+separation of concern (dom vs logic)
+task queue
+different types of language - scripting , programming etc
+difference between double and single quotes
+statement vs expression
+nullish collecing operator
+leading and trailing spaces
+arguments object
+rest parameters
+
+
+
