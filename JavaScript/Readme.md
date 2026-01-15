@@ -131,3 +131,13 @@ rest parameters
 
 
 
+Quirks in js-
+NaN - Not a integer
+but typeof NaN is number
+typeof Null - object
+NaN === NaN - false
+[] + [] =""
+true + false = 1
+typeof [] -> object
+
+
