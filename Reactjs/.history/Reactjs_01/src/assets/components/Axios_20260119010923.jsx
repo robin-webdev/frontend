@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Axios = () => {
   const [first, setFirst] = useState([]);
@@ -10,11 +10,8 @@ const Axios = () => {
     setFirst(response.data);
     console.log(response.data);
   }
-
-  useEffect(() => {
-    getData();
-  }, []);
-
+   
+  useEf
   return (
     <div
       onClick={getData}

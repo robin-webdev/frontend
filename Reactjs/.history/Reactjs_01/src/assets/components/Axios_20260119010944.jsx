@@ -13,6 +13,10 @@ const Axios = () => {
 
   useEffect(() => {
     getData();
+
+    return () => {
+      second;
+    };
   }, []);
 
   return (

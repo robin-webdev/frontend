@@ -10,11 +10,8 @@ const Axios = () => {
     setFirst(response.data);
     console.log(response.data);
   }
-
-  useEffect(() => {
-    getData();
-  }, []);
-
+   
+  useEffect
   return (
     <div
       onClick={getData}
