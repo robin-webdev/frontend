@@ -4,11 +4,9 @@ import React, { useState } from "react";
 const Axios = () => {
   const [first, setFirst] = useState([]);
   async function getData() {
-    const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/todos/",
-    );
+    const response = await axios.get("https://pokeapi.co/api/v2/ability/7/");
     setFirst(response.data);
-    console.log(response.data);
+    console.log(response);
   }
 
   //   getData();

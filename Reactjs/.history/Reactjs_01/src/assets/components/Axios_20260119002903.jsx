@@ -17,7 +17,7 @@ const Axios = () => {
       onClick={getData}
       className="py-3 px-5 bg-red-400 active:scale-95 rounded-lg cursor-pointer select-none text-xl font-semibold"
     >
-      Refresh Data
+      Get Data
     </div>
   );
 };
