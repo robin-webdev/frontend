@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -10,7 +10,12 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout />,
+      element: (
+        <Layout>
+          <Navbar />
+          <Outlet />
+        </Layout>
+      ),
       children: [
         {
           index: true,
