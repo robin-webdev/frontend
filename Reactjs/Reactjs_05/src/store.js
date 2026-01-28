@@ -31,6 +31,6 @@ const useTaskStore = create(
     }),
     { name: "TaskStore" }, // Store name in devtools
   ),
-);
+);    
 
 export default useTaskStore;
