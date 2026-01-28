@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import useTaskStore from "../store";
 
 const New = () => {
-  return (
-    <div>New</div>
-  )
-}
+  const { tasks, addTask, removeTask } = useTaskStore();
 
-export default New
+  // console.log(tasks);
+  return <div></div>;
+};
+
+export default New;
